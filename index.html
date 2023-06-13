@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+<style>
+select {
+outline: none;
+border: none;
+background: none;
+padding: 7px 7px 7px 0px;
+
+font-size: 15px;
+cursor: pointer;
+}
+select:hover{
+color:grey;
+}
+</style>
+<script src='order.js'></script>
+</head>
+<body>
+<form method="post" action="order.php">
+<table>
+<tr>
+<td>Name</td><td name="name" style="background-color:rgb(200, 200, 255)"><input type="text"></td></tr>
+<td>Surname</td><td name="surname" style="background-color:rgb(200, 200, 255)"><input type="text"></td></tr>
+<td>Cellphone number</td><td name="contact" style="background-color:rgb(200, 200, 255)"><input type="text"></td></tr>
+
+</table><br><br>
+
+<fieldset><legend>Order a T-shirt</legend>
+<table>
+<tr>
+<td name="tshirt" style="background-color:rgb(200, 200, 255);" ><select style="width:200px">
+<option value="">item</option>
+<option value="tshirt_logo">T-Shirt with Logo</option>
+<option value="tshirt_brand">T-Shirt with brand name</option>
+<option value="tshirt_design">T-Shirt with Logo and design</option>
+<option value="tshirt_short">T-Shirt with short</option>
+</select></td>
+<td name="t" style="background-color:rgb(200, 200, 255);">
+<select style="width:200px">
+<option value="">Quantity</option>
+<option value="t1">1</option>
+<option value="t2">2</option>
+<option value="t3">3</option>
+<option value="t4">4</option>
+<option value="t5">5</option>
+</td></tr>
+<td name="tcolour" style="background-color:rgb(200, 200, 255);"><select style="width:200px">
+<option value="">colour</option>
+<option value="tred">red</option>
+<option value="tblue">blue</option>
+<option value="tgreen">green</option>
+<option value="torange">orange</option>
+<option value="twhite">white</option>
+<option value="tblack">black</option>
+</select></td></tr></table></fieldset><br><br>
+
+<fieldset><legend>Order a Hoodie</legend><table>
+<tr>
+<td name="hoodie" style="background-color:rgb(200, 200, 255);"><select style="width:200px">
+<option value="">item</option>
+<option value="hoodie_logo">Hoodie with Logo</option>
+<option value="hoodie_brand">Hoodie with brand name</option>
+<option value="hoodie_design">Hoodie with design</option>
+</select></td>
+<td name="h" style="background-color:rgb(200, 200, 255);">
+<select style="width:200px">
+<option value="">Quantity</option>
+<option value="h1">1</option>
+<option value="h2">2</option>
+<option value="h3">3</option>
+<option value="h4">4</option>
+<option value="h5">5</option>
+</td></tr>
+<tr>
+<td name="hcolour" style="background-color:rgb(200, 200, 255);"><select style="width:200px">
+<option value="">colour</option>
+<option value="hred">red</option>
+<option value="hblue">blue</option>
+<option value="hgreen">green</option>
+<option value="horange">orange</option>
+<option value="hwhite">white</option>
+<option value="hblack">black</option>
+</select></td></tr></table></fieldset><br><br>
+
+<input type="submit" value="Place Order"></button>
+</form>
+</body>
+</html>
